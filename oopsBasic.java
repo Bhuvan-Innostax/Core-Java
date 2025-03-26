@@ -1,13 +1,13 @@
 class Car{
-    private  String carName;
-    private final int price;
+    private final String carName;
+    private  int price;
     public Car(String car , int price){
         this.carName = car;
         this.price = price;
     }
-    public String changeCarName(String newName){
-        this.carName = newName;
-        return carName;
+    public int changeCarName(int price){
+        this.price = price;
+        return price;
     }
     public int  getPrice(){
         return price;
@@ -23,7 +23,7 @@ public class oopsBasic {
         Car car1 = new Car("Maruti 800", 500000);
         System.out.println(car1.getCarName());
         System.out.println(car1.getPrice());
-        car1.changeCarName("HondaCity");
+        car1.changeCarName(100000);
         System.out.println(car1.getCarName());
 
         

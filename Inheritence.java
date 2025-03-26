@@ -30,7 +30,7 @@ class Employee{
 }
 
 class TechDepartment extends Employee{
-    public String departmentName;
+    public final String departmentName;
     public String teamLead;
 
     public TechDepartment(String name , String id , String choice, String Tname){
@@ -53,7 +53,7 @@ class TechDepartment extends Employee{
 
 
 class NonTechDepartment extends Employee{
-    public String departmentName;
+    public final String departmentName;
     public String teamLead;
 
     public NonTechDepartment(String name , String id , String choice, String Tname){
